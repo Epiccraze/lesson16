@@ -4,11 +4,18 @@ Total=round(Total,2)
 print("please pay ",format(Total))
 TotalBill_Calculator(150,2)"""
 
-def cube_number(number):
+"""def cube_number(number):
     return number*number*number
 def By_number(number):
     if number%3==0:
         return cube_number(number)
     else:
         return False
-print(By_number(5))
+print(By_number(5))"""
+
+def factorial(x):
+    if x==0 or x==1:
+        return 1
+    else:
+        return x*factorial(x-1)
+print(factorial(12))
